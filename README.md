@@ -1,4 +1,53 @@
-# Getting Started with Create React App
+# Cook Assitant
+![Image of People Speaking](https://image.flaticon.com/icons/png/512/1141/1141031.png)
+
+## Project Description
+Has there ever been a situation where you were unsure how a sentence or paragraph is perceived by others? With the help of this app, Speech Audit, and IBM's Speech to Text and Tone Analyzer API, users are able to see what emotion others may perceive in your sentence!
+
+**Link To Site:** LINK ONCE DEPLOYED
+
+## Preparation
+1. Fork and clone this repository
+2. Install dependencies with `<yarn install react-bootstrap@next bootstrap@5.0.2 react-router-dom>`
+3. Run the app with `<yarn start>`
+
+### Programs/Application Used:
+- React
+- BootStrap
+- JSX
+- CSS
+- Yarn
+
+## Learning Experience
+
+
+## Setting Up Project
+One of the key feature of React is the compostion of the components. Similar to function in vanilla Javascript, components are reuseable function in React. Before diving into the creating the app, understanding the components hierarchy. 
+
+![Component Hierarchy](https://media.git.generalassemb.ly/user/36270/files/43f8a500-f31a-11eb-8a5b-e4a77da3c50b)
+
+
+### Setting Up Core Structure
+
+#### React Components 
+
+#### Dynamic API Calls
+
+#### Presenting Data
+
+#### Focusing on User Experience
+
+## Problem Areas
+ 
+## Future Directions
+
+## Accomplishments
+
+## References
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +116,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
