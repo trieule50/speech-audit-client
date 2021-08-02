@@ -1,4 +1,4 @@
-# Cook Assitant
+# Speech Audit
 ![Image of People Speaking](https://image.flaticon.com/icons/png/512/1141/1141031.png)
 
 ## Project Description
