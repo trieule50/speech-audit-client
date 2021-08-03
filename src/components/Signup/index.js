@@ -4,7 +4,7 @@ import { Button, Container } from 'react-bootstrap';
 const Signup = () => {
     return(
         <div>
-            <h1>Sign Up</h1>
+            <h2>Sign Up</h2>
             <Container className='signup-form'>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

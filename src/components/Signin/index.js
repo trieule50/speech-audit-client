@@ -4,7 +4,7 @@ import { Button, Container } from 'react-bootstrap';
 const Signin = () => {
     return(
         <div>
-            <h1>Sign In</h1>
+            <h2>Sign In</h2>
             <Container className='signin-form'>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

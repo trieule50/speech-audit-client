@@ -2,6 +2,10 @@ body {
   text-align: center;
 }
 
+h2{
+  padding: 1rem;
+}
+
 .home-container{
   background: linear-gradient(110deg, #ffff 50%, rgb(147, 185, 241) 40%);
   background-repeat: no-repeat;
@@ -18,5 +22,7 @@ body {
 }
 
 .signup-form, .signin-form{
-  padding-top: 2rem;
+  padding: 2rem;
+  background-color: rgb(179, 205, 243);
+  border-radius: 25px;
 }
