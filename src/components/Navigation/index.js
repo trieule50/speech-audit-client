@@ -12,6 +12,7 @@ const Navigation = () => {
                         <Nav.Link href="/demo">Demo</Nav.Link>
                         <Nav.Link href="/signup">Sign Up</Nav.Link>
                         <Nav.Link href="/signin">Sign In</Nav.Link>
+                        <Nav.Link href="/tone">Tone Analyzer</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

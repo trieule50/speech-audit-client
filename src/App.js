@@ -6,6 +6,7 @@ import Navigation from './components/Navigation';
 import Demo from './components/Demo';
 import Signup from './components/Signup';
 import Signin from './components/Signin';
+import Tone from './components/Tone';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navigation />
       <main>
         <Switch>
+          <Route path='/tone' exact render={()=> <Tone/>}/>
           <Route path='/signin' exact render={()=> <Signin/>}/>
           <Route path='/signup' exact render={()=> <Signup/>}/>
           <Route path='/demo' exact render={()=> <Demo/>}/>
