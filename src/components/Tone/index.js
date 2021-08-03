@@ -9,6 +9,8 @@ const Tone = () =>{
 
     const [formData, setFormData] = useState(initialFormData)
 
+    const [tone, setTone] = useState('')
+
     const _handleChange = (event) => {
 		setFormData((prevState) => {
 			return { ...prevState, [event.target.id]: event.target.value };
@@ -18,16 +20,17 @@ const Tone = () =>{
     const _handleSubmit = async(event) => {
         event.preventDefault();
         try{
-            const response = await fetch('http://localhost:8080/text', {method: 'POST', 
-            body: JSON.stringify(formData.text), 
+            const response = await fetch('http://localhost:8080/text', 
+            {method: 'POST', 
+            body: JSON.stringify({text: formData.text}), 
             headers:{
                 'Content-Type': 'application/json',
             }})
-            console.log(formData.text)
-            console.log(response)
             if(response.status === 200){
-                setFormData();
                 console.log('success!')
+                const data = await response.json()
+                setTone(data.result.document_tone.tones[0].tone_name)
+                // setFormData()
             }
         }catch(error){
             console.log(error)
@@ -44,7 +47,7 @@ const Tone = () =>{
                     <Form.Control rows={3} 
                     required
                     value={formData.text}
-                    type='text'
+                    type="text"
                     onChange={_handleChange}
                     />
                 </Form.Group>
@@ -55,12 +58,7 @@ const Tone = () =>{
             </Container>
             <Container>
             <div>
-                {/* {formData.map((data)=>{
-                    return(
-                        <h1>{data.tone_name}</h1>
-                    )
-                })} */}
-                {formData.result}
+                <h1>{tone}</h1>
             </div>
                 
             </Container>
