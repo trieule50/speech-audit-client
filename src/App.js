@@ -1,6 +1,9 @@
+//imports from React
 import './App.css';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom';
+import { useState } from 'react';
 
+//imports components
 import Home from './components/Home';
 import Navigation from './components/Navigation';
 import Demo from './components/Demo';
@@ -8,7 +11,9 @@ import Signup from './components/Signup';
 import Signin from './components/Signin';
 import Tone from './components/Tone';
 
+
 function App() {
+
   return (
     <div className="App">
       <Navigation />
