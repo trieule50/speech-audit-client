@@ -44,11 +44,14 @@ From the Component Hierarchy, the user login is the main prop that is drill thro
 ## Accomplishments
 
 ## References
+- [IBM Watson - Tone Analysis](https://cloud.ibm.com/apidocs/tone-analyzer?code=node#data-handling)
+- [IBM Watson - Speech to Text](https://cloud.ibm.com/apidocs/speech-to-text?code=node)
 - [React Bootstrap](https://react-bootstrap.github.io/components/forms/)
 - [Speech Icon](https://www.flaticon.com/free-icon/conversation_4359295?term=speech%20audit&page=1&position=2&page=1&position=2&related_id=4359295&origin=search)
 - [Chat Icon](https://www.flaticon.com/free-icon/chat_1141031?term=speech&page=1&position=10&page=1&position=10&related_id=1141031&origin=search)
-- [IBM Watson - Tone Analysis](https://cloud.ibm.com/apidocs/tone-analyzer?code=node#data-handling)
-- [IBM Watson - Speech to Text](https://cloud.ibm.com/apidocs/speech-to-text?code=node)
+- [Sign In Icon](https://www.flaticon.com/free-icon/sign-in_908164?term=sign%20in&page=1&position=25&page=1&position=25&related_id=908164&origin=search)
+- [Upload Icon](https://www.flaticon.com/free-icon/upload_3039527?term=upload&page=1&position=25&page=1&position=25&related_id=3039527&origin=search)
+- [Perception Icon](https://www.flaticon.com/free-icon/opinion_5226377?term=perception&page=1&position=89&page=1&position=89&related_id=5226377&origin=search)
 
 
 <!-- # Getting Started with Create React App
