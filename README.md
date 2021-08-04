@@ -14,9 +14,9 @@ Has there ever been a situation where you were unsure how a sentence or paragrap
 ### Programs/Application Used:
 - React
 - BootStrap
-- JSX
 - CSS
-- Yarn
+- JSX
+- IBM Watson
 
 ## Learning Experience
 
@@ -28,8 +28,8 @@ One of the key feature of React is the compostion of the components. Similar to 
 
 
 ### Setting Up Core Structure
-
-#### React Components 
+#### React Components
+From the Component Hierarchy, the user login is the main prop that is drill through each component. 
 
 #### Dynamic API Calls
 
@@ -44,7 +44,11 @@ One of the key feature of React is the compostion of the components. Similar to 
 ## Accomplishments
 
 ## References
-
+- [React Bootstrap](https://react-bootstrap.github.io/components/forms/)
+- [Speech Icon](https://www.flaticon.com/free-icon/conversation_4359295?term=speech%20audit&page=1&position=2&page=1&position=2&related_id=4359295&origin=search)
+- [Chat Icon](https://www.flaticon.com/free-icon/chat_1141031?term=speech&page=1&position=10&page=1&position=10&related_id=1141031&origin=search)
+- [IBM Watson - Tone Analysis](https://cloud.ibm.com/apidocs/tone-analyzer?code=node#data-handling)
+- [IBM Watson - Speech to Text](https://cloud.ibm.com/apidocs/speech-to-text?code=node)
 
 
 <!-- # Getting Started with Create React App
