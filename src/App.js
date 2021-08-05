@@ -1,7 +1,7 @@
 //imports from React
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 //imports components
 import Home from './components/Home';
@@ -16,11 +16,12 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation />
+      <Navigation
+      />
       <main>
         <Switch>
           <Route path='/tone' exact render={()=> <Tone/>}/>
-          <Route path='/signin' exact render={()=> <Signin/>}/>
+          <Route path='/signin' exact render={()=> <Signin />}/>
           <Route path='/signup' exact render={()=> <Signup/>}/>
           <Route path='/demo' exact render={()=> <Demo/>}/>
           <Route path='/' exact render={()=> <Home/>}/>

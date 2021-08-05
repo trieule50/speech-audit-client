@@ -23,7 +23,6 @@ const Signin = () => {
             return {...prevState, [event.target.id]: event.target.value}
         })
     }
-
     const _handleSignin = async (event) => {
         event.preventDefault();
         try{
@@ -40,7 +39,6 @@ const Signin = () => {
             console.log(err)
         }
     }
-
     return(
         <div>
             <h2>Sign In</h2>
