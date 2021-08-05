@@ -14,6 +14,16 @@ import Tone from './components/Tone';
 
 function App() {
 
+  const [loggedIn, setLoggedIn] = useState(
+		localStorage.getItem('token') ? true : false
+  )
+
+  const [userInfo, setUserInfo] = useState(null)
+
+  console.log(userInfo)
+
+
+
   return (
     <div className="App">
       <Navigation
@@ -21,10 +31,10 @@ function App() {
       <main>
         <Switch>
           <Route path='/tone' exact render={()=> <Tone/>}/>
-          <Route path='/signin' exact render={()=> <Signin />}/>
+          <Route path='/signin' exact render={()=> <Signin setUserInfo={setUserInfo}/>}/>
           <Route path='/signup' exact render={()=> <Signup/>}/>
           <Route path='/demo' exact render={()=> <Demo/>}/>
-          <Route path='/' exact render={()=> <Home/>}/>
+          <Route path='/' exact render={()=> <Home loggedIn={loggedIn} userInfo={userInfo}/>}/>
         </Switch>
       </main>
     </div>

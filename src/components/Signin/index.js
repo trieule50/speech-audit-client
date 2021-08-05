@@ -4,7 +4,7 @@ import { Button, Container } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
 
-const Signin = () => {
+const Signin = ({ setUserInfo }) => {
 
     const initialFormData = {
         email: '',
@@ -33,6 +33,7 @@ const Signin = () => {
             console.log(response)
             if(response.status === 200){
                 const data = await response.json()
+                setUserInfo(data)
                 history.push('/')
             }else{
 
