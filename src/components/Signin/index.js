@@ -15,9 +15,6 @@ const Signin = () => {
     const history = useHistory();
     const [signinData, setSigninData] = useState(initialFormData)
 
-    const [error, setError] = useState(false)
-    const [success, setSuccess] = useState(false)
-
     const _handleChange = (event) => {
         setSigninData((prevState) => {
             return {...prevState, [event.target.id]: event.target.value}
@@ -26,15 +23,20 @@ const Signin = () => {
     const _handleSignin = async (event) => {
         event.preventDefault();
         try{
-            const response = await fetch('http://localhost:8080/user/signin', {
+            const response = await fetch('http://localhost:8080/user/login', {
                 method: 'POST',
                 body: JSON.stringify(signinData),
                 headers:{
                     'Content-Type': 'application/json',
                 }
             })
-            const data = await response.json()
-            console.log(data)
+            console.log(response)
+            if(response.status === 200){
+                const data = await response.json()
+                history.push('/')
+            }else{
+
+            }
         }catch(err){
             console.log(err)
         }
