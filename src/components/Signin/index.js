@@ -23,7 +23,7 @@ const Signin = ({ setUserInfo, handleSetLoggedIn }) => {
     const _handleSignin = async (event) => {
         event.preventDefault();
         try{
-            const response = await fetch('http://localhost:8080/user/login', {
+            const response = await fetch('https://trieu-speech-audit-api.herokuapp.com/user/login', {
                 method: 'POST',
                 body: JSON.stringify(signinData),
                 headers:{

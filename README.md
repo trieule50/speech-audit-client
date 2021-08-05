@@ -4,7 +4,7 @@
 ## Project Description
 Has there ever been a situation where you were unsure how a sentence or paragraph is perceived by others? With the help of this app, Speech Audit, and IBM's Speech to Text and Tone Analyzer API, users are able to see what emotion others may perceive in your sentence!
 
-**Link To Site:** LINK ONCE DEPLOYED
+**Link To Site:** [Speech Audit](https://speechaudit.netlify.app/)
 
 ## Preparation
 1. Fork and clone this repository

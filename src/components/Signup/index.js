@@ -27,7 +27,7 @@ const Signup = () => {
         event.preventDefault();
         if(!error){
             try{
-                const response = await fetch('http://localhost:8080/user/register', {
+                const response = await fetch('https://trieu-speech-audit-api.herokuapp.com/user/register', {
                     method:'POST',
                     body: JSON.stringify(signupData),
                     headers: {

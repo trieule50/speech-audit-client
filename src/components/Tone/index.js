@@ -20,7 +20,7 @@ const Tone = () =>{
     const _handleSubmit = async(event) => {
         event.preventDefault();
         try{
-            const response = await fetch('http://localhost:8080/text', 
+            const response = await fetch('https://trieu-speech-audit-api.herokuapp.com/text', 
             {method: 'POST', 
             body: JSON.stringify({text: formData.text}), 
             headers:{

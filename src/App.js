@@ -28,7 +28,7 @@ function App() {
 
   const getUserInfo = async () => {
 		try {
-			const response = await fetch(`http://localhost:8080/user/login/${localStorage.getItem('email')}`, {
+			const response = await fetch(`https://trieu-speech-audit-api.herokuapp.com/user/login/${localStorage.getItem('email')}`, {
         method: 'POST',
         body: JSON.stringify({ email: localStorage.getItem('email')}),
         headers:{
