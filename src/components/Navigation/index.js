@@ -1,6 +1,6 @@
 import { Container, Navbar, Nav } from "react-bootstrap";
 
-const Navigation = () => {
+const Navigation = ({ userInfo, loggedIn, _handleLogout}) => {
     return(
         <Navbar bg="light" expand="md">
             <Container>
@@ -10,9 +10,20 @@ const Navigation = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/demo">Demo</Nav.Link>
-                        <Nav.Link href="/signup">Sign Up</Nav.Link>
-                        <Nav.Link href="/signin">Sign In</Nav.Link>
-                        <Nav.Link href="/tone">Tone Analyzer</Nav.Link>
+                        {userInfo && loggedIn
+                        ? (
+                            <>
+                            <Nav.Link href="/tone">Tone Analyzer</Nav.Link>
+                            <Nav.Link href="/" onClick={_handleLogout}>Logout</Nav.Link>
+                            </>
+                        )
+                        : (
+                            <>
+                            <Nav.Link href="/signup">Sign Up</Nav.Link>
+                            <Nav.Link href="/signin">Sign In</Nav.Link>
+                            </>
+                        )
+                        }
                     </Nav>
                 </Navbar.Collapse>
             </Container>
