@@ -26,3 +26,19 @@ h2{
   background-color: rgb(179, 205, 243);
   border-radius: 25px;
 }
+
+.demo-icon{
+  height: 15rem;
+  padding: 3rem;
+}
+
+.sign-in{
+  height: 17rem;
+}
+
+li{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
