@@ -9,7 +9,7 @@ const Tone = () =>{
 
     const [formData, setFormData] = useState(initialFormData)
 
-    const [tone, setTone] = useState('')
+    const [tone, setTone] = useState([])
 
     const _handleChange = (event) => {
 		setFormData((prevState) => {
@@ -29,14 +29,13 @@ const Tone = () =>{
             if(response.status === 200){
                 console.log('success!')
                 const data = await response.json()
-                setTone(data.result.document_tone.tones[0].tone_name)
-                // setFormData()
+                setTone(data.result.document_tone.tones)
             }
         }catch(error){
             console.log(error)
         }
     }
-
+    
     return(
         <div>
             <h1>Tone Analyzer</h1>
@@ -58,9 +57,16 @@ const Tone = () =>{
             </Container>
             <Container>
             <div>
-                <h1>{tone}</h1>
+                <h2>Result:</h2>
+                {tone.map((data, i) => {
+                    if(!tone){
+                        return <h3>No tone detected. Try Again.</h3>
+                    }else{ 
+                    return(
+                        <h3 key={i}>{data.tone_name}</h3>
+                    )}
+                })}
             </div>
-                
             </Container>
         </div>
     )

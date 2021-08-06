@@ -1,6 +1,6 @@
 //imports from React
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useHistory } from 'react-router-dom';
 import { useState,useEffect } from 'react';
 
 //imports components
@@ -13,6 +13,8 @@ import Tone from './components/Tone';
 
 
 function App() {
+
+  const history = useHistory()
 
   const [loggedIn, setLoggedIn] = useState(
 		localStorage.getItem('token', 'email') ? true : false
@@ -46,7 +48,8 @@ function App() {
     setLoggedIn(false);
 		setUserInfo(null);
 		localStorage.removeItem('token');
-    localStorage.removeItem('email')
+    localStorage.removeItem('email');
+    history.push('/')
   }
 
   useEffect(() =>{

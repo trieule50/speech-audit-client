@@ -32,16 +32,54 @@ One of the key feature of React is the compostion of the components. Similar to 
 From the Component Hierarchy, the user login is the main prop that is drill through each component. 
 
 #### Dynamic API Calls
+By using a principle from LEAN called pull planning, in which the project collaboratively start with the end goal and works backward toward the start date, the text to tone was create first. The dynamic API call for the text to tone was done in under the `<_handleSubmit>` function which uses the POST method and passed in the text from the formData. And then dotting into the tone results.
+
+```JS
+const _handleSubmit = async(event) => {
+        event.preventDefault();
+        try{
+            const response = await fetch('https://trieu-speech-audit-api.herokuapp.com/text', 
+            {method: 'POST', 
+            body: JSON.stringify({text: formData.text}), 
+            headers:{
+                'Content-Type': 'application/json',
+            }})
+            if(response.status === 200){
+                const data = await response.json()
+                setTone(data.result.document_tone.tones)
+            }
+        }catch(error){
+            console.log(error)
+        }
+    }
+```
 
 #### Presenting Data
 
+For the individual tone result. Two tones, which is the most noticeable tone are presesented. 
+
+```JS
+<h2>Result:</h2>
+    {tone.map((data, i) => {
+        if(!tone){
+            return <h3>No tone detected. Try Again.</h3>
+            }else{ 
+            return(
+            <h3 key={i}>{data.tone_name}</h3>
+            )}
+        })}
+```
+
 #### Focusing on User Experience
+The app was created with the mindset off mobile first to get the best user experience. As well as implementing notification when there is a success or failure action. 
 
 ## Problem Areas
  
 ## Future Directions
 
 ## Accomplishments
+- App is responsive
+- App has an user authentication
 
 ## References
 - [IBM Watson - Tone Analysis](https://cloud.ibm.com/apidocs/tone-analyzer?code=node#data-handling)
