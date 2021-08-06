@@ -54,6 +54,61 @@ const _handleSubmit = async(event) => {
     }
 ```
 
+Next API call is for the user authentication. 
+
+```JS
+//Sign In API Call
+const _handleSignin = async (event) => {
+    event.preventDefault();
+    try{
+        const response = await fetch('https://trieu-speech-audit-api.herokuapp.com/user/login', {
+        method: 'POST',
+        body: JSON.stringify(signinData),
+        headers:{
+            'Content-Type': 'application/json',
+        }
+        })
+        if(response.status === 200){
+            const data = await response.json()
+            handleSetLoggedIn(data)
+            history.push('/')
+            window.location.reload()
+        }else{
+            alert(response.statusText)
+        }
+    }catch(err){
+        console.log(err)
+    }
+}
+```
+
+```JS
+//Sign Up API Call
+const _handleSignup = async(event) => {
+    event.preventDefault();
+    if(!error){
+        try{
+            const response = await fetch('https://trieu-speech-audit-api.herokuapp.com/user/register', {
+            method:'POST',
+            body: JSON.stringify(signupData),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+            });
+            const data = await response.json();
+            if(response.status === 201){
+            setSuccess(true);
+            setTimeout(() => {
+                    history.push('/signin')
+                },2500)
+            }
+        }catch(error){
+            console.log(error)
+        }
+    }
+}
+```
+
 #### Presenting Data
 
 For the individual tone result. Two tones, which is the most noticeable tone are presesented. 
