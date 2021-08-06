@@ -97,7 +97,7 @@ const Signup = () => {
                 {error && <Alert variant='danger'>Passwords must match!</Alert>}
 				{success && (
 					<Alert variant='success'>
-						User successfully created! You will be redirected to log in. If you
+						Welcome! You will be redirected to log in. If you
 						are not automatically redirected, please click{' '}
 						{<Link to='login'>here</Link>}.
 					</Alert>
