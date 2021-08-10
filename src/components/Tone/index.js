@@ -32,7 +32,6 @@ const Tone = () =>{
             setLoading(true)
             if(response.status === 200){
                 const data = await response.json()
-                console.log(data)
                 setTone(data.result.document_tone.tones)
             }
         }catch(error){

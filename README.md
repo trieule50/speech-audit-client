@@ -129,8 +129,12 @@ For the individual tone result. Two tones, which is the most noticeable tone are
 The app was created with the mindset off mobile first to get the best user experience. As well as implementing notification when there is a success or failure action. 
 
 ## Problem Areas
+- User Authentication - one of the issue that was presented was getting the current user information. With the help of the backend, I was able to store the user token key and user's email in the local storage to then later grab and used to render the front page. 
+
+- Audio upload
  
 ## Future Directions
+- Working on the audio to text to render the tone. 
 
 ## Accomplishments
 - App is responsive
