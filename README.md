@@ -131,7 +131,7 @@ The app was created with the mindset off mobile first to get the best user exper
 ## Problem Areas
 - User Authentication - one of the issue that was presented was getting the current user information. With the help of the backend, I was able to store the user token key and user's email in the local storage to then later grab and used to render the front page. 
 
-- Audio upload
+- Audio upload - there are two problems regarding the audio upload. Linking file reader to allow the user to upload any file and making an API using formData.
  
 ## Future Directions
 - Working on the audio to text to render the tone. 
