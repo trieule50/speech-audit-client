@@ -14,6 +14,7 @@ const Navigation = ({ userInfo, loggedIn, _handleLogout}) => {
                         ? (
                             <>
                             <Nav.Link href="/tone">Tone Analyzer</Nav.Link>
+                            <Nav.Link href="/audio">Speech Analyzer</Nav.Link>
                             <Nav.Link href="/" onClick={_handleLogout}>Logout</Nav.Link>
                             </>
                         )

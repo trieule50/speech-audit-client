@@ -26,6 +26,11 @@ p{
   padding: 3rem;
 }
 
+.work-in-progress{
+  height: 18rem;
+  padding: 2rem;
+}
+
 .signup-form, .signin-form{
   padding: 2rem;
   background-color: rgb(179, 205, 243);
