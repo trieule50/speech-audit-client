@@ -1,5 +1,5 @@
 import Form from 'react-bootstrap/Form';
-import { Button, Container } from 'react-bootstrap';
+import { Button, Container, Alert } from 'react-bootstrap';
 
 import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
@@ -11,6 +11,9 @@ const Signin = ({ setUserInfo, handleSetLoggedIn }) => {
         password: '',
 
     }
+
+    const [error, setError] = useState(false)
+    const [success, setSuccess] = useState(false)
 
     const history = useHistory();
     const [signinData, setSigninData] = useState(initialFormData)
@@ -34,9 +37,10 @@ const Signin = ({ setUserInfo, handleSetLoggedIn }) => {
                 const data = await response.json()
                 handleSetLoggedIn(data)
                 history.push('/')
+                setSuccess(true)
                 window.location.reload()
             }else{
-                alert(response.statusText)
+                setError(true)
             }
         }catch(err){
             console.log(err)
@@ -70,6 +74,7 @@ const Signin = ({ setUserInfo, handleSetLoggedIn }) => {
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
+                {error && <Alert variant='danger'>Oops, something went wrong. Please try again.</Alert>}
             </Form>
             </Container>
         </div>

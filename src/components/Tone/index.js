@@ -1,5 +1,5 @@
-import { Button, Container, Form } from "react-bootstrap";
-import { useState } from "react";
+import { Button, Container, Form, Spinner } from "react-bootstrap";
+import { useEffect, useState } from "react";
 
 const Tone = () =>{
 
@@ -7,9 +7,11 @@ const Tone = () =>{
         text: ''
     }
 
-    const [formData, setFormData] = useState(initialFormData)
+    const [formData, setFormData] = useState(initialFormData);
 
-    const [tone, setTone] = useState([])
+    const [tone, setTone] = useState([]);
+
+    const [loading, setLoading] = useState(true);
 
     const _handleChange = (event) => {
 		setFormData((prevState) => {
@@ -19,6 +21,7 @@ const Tone = () =>{
 
     const _handleSubmit = async(event) => {
         event.preventDefault();
+        setLoading(false)
         try{
             const response = await fetch('https://trieu-speech-audit-api.herokuapp.com/text', 
             {method: 'POST', 
@@ -26,9 +29,10 @@ const Tone = () =>{
             headers:{
                 'Content-Type': 'application/json',
             }})
+            setLoading(true)
             if(response.status === 200){
-                console.log('success!')
                 const data = await response.json()
+                console.log(data)
                 setTone(data.result.document_tone.tones)
             }
         }catch(error){
@@ -56,16 +60,24 @@ const Tone = () =>{
             </Form>
             </Container>
             <Container>
-            <div>
+            <div className='results'>
                 <h2>Result:</h2>
-                {tone.map((data, i) => {
-                    if(!tone){
-                        return <h3>No tone detected. Try Again.</h3>
+                {loading 
+                ? 
+                tone.map((data, i) => {
+                    if(data.length === 0){
+                        return (
+                        <h3>
+                            No tone detected. Try Again.
+                        </h3>)
                     }else{ 
                     return(
-                        <h3 key={i}>{data.tone_name}</h3>
+                        <h3 key={i}>
+                            {data.tone_name}
+                        </h3>
                     )}
-                })}
+                })
+                : <Spinner animation="border" variant="success" />}
             </div>
             </Container>
         </div>
