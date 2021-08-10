@@ -10,6 +10,7 @@ import Demo from './components/Demo';
 import Signup from './components/Signup';
 import Signin from './components/Signin';
 import Tone from './components/Tone';
+import Audio from './components/Audio';
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
       />
       <main>
         <Switch>
+          <Route path='/audio' exact render={()=> <Audio/>}/>
           <Route path='/tone' exact render={()=> <Tone/>}/>
           <Route path='/signin' exact render={()=> <Signin setUserInfo={setUserInfo} handleSetLoggedIn={handleSetLoggedIn}/>}/>
           <Route path='/signup' exact render={()=> <Signup/>}/>
