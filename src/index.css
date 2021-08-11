@@ -18,12 +18,18 @@ p{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 1rem;
+  height: 100vh;
+}
+
+.audio, .tone, .signin, .signup, .demo{
+  background: linear-gradient(#4cd6aa, #4083c5);
+  height: 100vh;
 }
 
 .home-img{
   height: 28rem;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .work-in-progress{

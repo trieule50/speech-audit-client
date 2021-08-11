@@ -40,7 +40,7 @@ const Tone = () =>{
     }
     
     return(
-        <div>
+        <div className='tone'>
             <h1>Tone Analyzer</h1>
             <Container className='tone-analyzer-form'>
             <Form onSubmit={_handleSubmit}>

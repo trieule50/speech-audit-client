@@ -1,6 +1,5 @@
 import Form from 'react-bootstrap/Form';
 import { Button, Container, Alert } from 'react-bootstrap';
-
 import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -12,11 +11,11 @@ const Signin = ({ setUserInfo, handleSetLoggedIn }) => {
 
     }
 
+    const history = useHistory();
+    const [signinData, setSigninData] = useState(initialFormData);
+
     const [error, setError] = useState(false)
     const [success, setSuccess] = useState(false)
-
-    const history = useHistory();
-    const [signinData, setSigninData] = useState(initialFormData)
 
     const _handleChange = (event) => {
         setSigninData((prevState) => {
@@ -47,7 +46,7 @@ const Signin = ({ setUserInfo, handleSetLoggedIn }) => {
         }
     }
     return(
-        <div>
+        <div className='signin'>
             <h2>Sign In</h2>
             <Container className='signin-form'>
             <Form onSubmit={_handleSignin}>
@@ -70,7 +69,6 @@ const Signin = ({ setUserInfo, handleSetLoggedIn }) => {
                     onChange={_handleChange}
                     />
                 </Form.Group>
-                    
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
