@@ -22,9 +22,14 @@ p{
   height: 100vh;
 }
 
-.audio, .tone, .signin, .signup, .demo{
+.audio, .tone, .signin, .signup{
   background: linear-gradient(#4cd6aa, #4083c5);
   height: 100vh;
+}
+
+.demo{
+  background: linear-gradient(#4cd6aa, #4083c5);
+  height: 100%;
 }
 
 .home-img{
