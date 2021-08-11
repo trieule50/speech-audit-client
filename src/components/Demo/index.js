@@ -1,6 +1,6 @@
 const Demo = () => {
     return(
-        <div>
+        <div className='demo'>
             <h2>Demostration</h2>
             <p>------How to use Speech Audit------</p>
             <ol>

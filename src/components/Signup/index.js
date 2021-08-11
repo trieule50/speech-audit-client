@@ -56,7 +56,7 @@ const Signup = () => {
     }
 
     return(
-        <div>
+        <div className='signup'>
             <h2>Sign Up</h2>
             <Container className='signup-form'>
             <Form onSubmit={_handleSignup}>
