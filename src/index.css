@@ -11,6 +11,10 @@ p{
   font-size: 1.25rem;
 }
 
+.demo-font{
+  font-size: .90rem;
+}
+
 .home-container{
   background: linear-gradient(110deg, #ffff 50%, rgb(147, 185, 241) 40%);
   background-repeat: no-repeat;
@@ -49,8 +53,7 @@ p{
 }
 
 .demo-icon{
-  height: 15rem;
-  padding: 3rem;
+  padding: 5rem;
 }
 
 .sign-in{
