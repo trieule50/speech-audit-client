@@ -8,7 +8,7 @@ Has there ever been a situation where you were unsure how a sentence or paragrap
 
 ## Preparation
 1. Fork and clone this repository
-2. Install dependencies with `<yarn install react-bootstrap@next bootstrap@5.0.2 react-router-dom>`
+2. Install dependencies with `<yarn add react-bootstrap@next bootstrap@5.0.2 react-router-dom>`
 3. Run the app with `<yarn start>`
 
 ### Programs/Application Used:
