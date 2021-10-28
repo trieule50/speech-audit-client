@@ -1,10 +1,15 @@
 import ReactWordcloud from "react-wordcloud";
 import words from "./words";
 
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale.css';
+
 const Home = ({ userInfo }) =>{
     return(
         <div className='home-container'>
-            <div><ReactWordcloud words={words}/></div>
+            <div style={{ height: 200, width: "100%" }}>
+                <ReactWordcloud words={words}/>
+            </div>
             <div className='home-item'>
                 <div>
                 <h1>Welcome

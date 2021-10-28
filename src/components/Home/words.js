@@ -1,103 +1,103 @@
 export default [
     {
         text: 'Absurd',
-        value: 224,
+        value: 8,
     },
     {
         text: 'Accusatory',
-        value: 11,
+        value: 5,
     },
     {
         text: 'Acerbic',
-        value: 16,
+        value: 11,
     },
     {
         text: 'Admiring',
-        value: 17,
+        value: 4,
     },
     {
         text: 'Aggressive',
-        value: 64,
+        value: 5,
     },
     {
         text: 'Aggrieved',
-        value: 11,
+        value: 6,
     },
     {
         text: 'Amused',
-        value: 16,
+        value: 7,
     },
     {
         text: 'Angry',
-        value: 17,
+        value: 8,
     },
     {
         text: 'Appreciative',
-        value: 64,
+        value: 8,
     },
     {
         text: 'Arrogant',
-        value: 11,
+        value: 9,
     },
     {
         text: 'Detached',
-        value: 16,
+        value: 10,
     },
     {
         text: 'Diplomatic',
-        value: 17,
+        value: 7,
     },
     {
         text: 'Disapproving',
-        value: 64,
+        value: 3,
     },
     {
         text: 'Disheartening',
-        value: 11,
+        value: 4,
     },
     {
         text: 'Direct',
-        value: 16,
+        value: 5,
     },
     {
         text: 'Encouraging',
-        value: 17,
+        value: 2,
     },
     {
         text: 'Excited',
-        value: 64,
+        value: 6,
     },
     {
         text: 'Farcical',
-        value: 11,
+        value: 7,
     },
     {
         text: 'Formal',
-        value: 16,
+        value: 8,
     },
     {
         text: 'Gentle',
-        value: 17,
+        value: 9,
     },
     {
         text: 'Grim',
-        value: 64,
+        value: 5,
     },
     {
         text: 'Humorous',
-        value: 11,
+        value: 6,
     },
     {
         text: 'Impassioned',
-        value: 16,
+        value: 5,
     },
     {
         text: 'Impressionable',
-        value: 17,
+        value: 4,
     },
     {
         text: 'Informative',
-        value: 64,
+        value: 6,
     },
     {
         text: 'Irreverent',
@@ -105,58 +105,186 @@ export default [
     },
     {
         text: 'Joyful',
-        value: 16,
+        value: 4,
     },
     {
         text: 'Light-Hearted',
-        value: 17,
+        value: 4,
     },
     {
         text: 'Loving',
-        value: 64,
+        value: 6,
     },
     {
         text: 'Judgemental',
-        value: 11,
+        value: 3,
     },
     {
         text: 'Mocking',
-        value: 16,
+        value: 5,
     },
     {
         text: 'Negative',
-        value: 17,
+        value: 5,
     },
     {
         text: 'Objective',
-        value: 64,
+        value: 6,
     },
     {
         text: 'Optimistic',
-        value: 11,
+        value: 8,
     },
     {
         text: 'Thoughtful',
-        value: 16,
+        value: 7,
     },
     {
         text: 'Philosophical',
-        value: 17,
+        value: 4,
     },
     {
         text: 'Righeous',
-        value: 64,
+        value: 5,
     },
     {
         text: 'Sensationalistic',
-        value: 11,
+        value: 6,
     },
     {
         text: 'Sincere',
-        value: 16,
+        value: 6,
     },
     {
         text: 'Sentimental',
-        value: 17,
+        value: 5,
+    },
+    {
+        text: 'Witty',
+        value: 6,
+    },
+    {
+        text: 'Wretched',
+        value: 3,
+    },
+    {
+        text: 'Whimsical',
+        value: 5,
+    },
+    {
+        text: 'Urgent',
+        value: 5,
+    },
+    {
+        text: 'Tragic',
+        value: 6,
+    },
+    {
+        text: 'Tolerant',
+        value: 8,
+    },
+    {
+        text: 'Sulking',
+        value: 7,
+    },
+    {
+        text: 'Submissive',
+        value: 4,
+    },
+    {
+        text: 'Righeous',
+        value: 5,
+    },
+    {
+        text: 'Unassuming',
+        value: 6,
+    },
+    {
+        text: 'Vindictive',
+        value: 6,
+    },
+    {
+        text: 'Restrained',
+        value: 5,
+    },
+    {
+        text: 'Bold',
+        value: 6,
+    },
+    {
+        text: 'Calm',
+        value: 8,
+    },
+    {
+        text: 'Commanding',
+        value: 7,
+    },
+    {
+        text: 'Doubtful',
+        value: 4,
+    },
+    {
+        text: 'Dramatic',
+        value: 5,
+    },
+    {
+        text: 'Egotistical',
+        value: 6,
+    },
+    {
+        text: 'Impartial',
+        value: 6,
+    },
+    {
+        text: 'Humorous',
+        value: 5,
+    },
+    {
+        text: 'Gullible',
+        value: 6,
+    },
+    {
+        text: 'Humble',
+        value: 3,
+    },
+    {
+        text: 'Malicious',
+        value: 5,
+    },
+    {
+        text: 'Wonder',
+        value: 5,
+    },
+    {
+        text: 'Uneasy',
+        value: 6,
+    },
+    {
+        text: 'Gloomy',
+        value: 8,
+    },
+    {
+        text: 'Neutral',
+        value: 7,
+    },
+    {
+        text: 'Earnest',
+        value: 4,
+    },
+    {
+        text: 'Cheerful',
+        value: 5,
+    },
+    {
+        text: 'Placid',
+        value: 6,
+    },
+    {
+        text: 'Lively',
+        value: 6,
+    },
+    {
+        text: 'Modest',
+        value: 5,
     }
 ]
