@@ -16,7 +16,7 @@ p{
 }
 
 .home-container{
-  background: linear-gradient(110deg, #ffff 50%, rgb(147, 185, 241) 40%);
+  background-image: url(https://www.hrcloud.com/hubfs/Group%2040-1.png); 
   background-repeat: no-repeat;
   display: flex;
   flex-wrap: wrap;

@@ -13,9 +13,9 @@ const Home = ({ userInfo }) =>{
                 </div>
                 
             </div>
-            <div>
+            {/* <div>
                 <img className='home-img' src='https://image.flaticon.com/icons/png/512/1141/1141031.png' alt='people speaking'/>
-            </div>   
+            </div>    */}
         </div>
     )
 }
