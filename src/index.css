@@ -16,8 +16,8 @@ p{
 }
 
 .home-container{
-  background-image: url(https://www.hrcloud.com/hubfs/Group%2040-1.png); 
-  background-repeat: no-repeat;
+  /* background-image: url(https://www.hrcloud.com/hubfs/Group%2040-1.png); 
+  background-repeat: no-repeat; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
