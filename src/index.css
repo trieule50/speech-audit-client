@@ -27,7 +27,7 @@ p{
 }
 
 .audio, .tone, .signin, .signup{
-  background: linear-gradient(#4cd6aa, #4083c5);
+  /* background: linear-gradient(#4cd6aa, #4083c5); */
   height: 100vh;
 }
 
