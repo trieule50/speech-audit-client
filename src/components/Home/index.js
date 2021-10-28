@@ -7,7 +7,7 @@ import 'tippy.js/animations/scale.css';
 const Home = ({ userInfo }) =>{
     return(
         <div className='home-container'>
-            <div style={{ height: 200, width: "100%" }}>
+            <div className='home-item' style={{ height: 200, width: "100%" }}>
                 <ReactWordcloud words={words}/>
             </div>
             <div className='home-item'>
