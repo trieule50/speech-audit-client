@@ -14,10 +14,9 @@ const Navigation = ({ userInfo, loggedIn, _handleLogout}) => {
                         {userInfo && loggedIn
                         ? (
                             <>
-                            <Nav.Link href="/tone">Tone Analyzer</Nav.Link>
+                            {/* <Nav.Link href="/tone">Tone Analyzer</Nav.Link> */}
                             <Nav.Link href="/audio">Speech Analyzer</Nav.Link>
                             <Nav.Link href="/" onClick={_handleLogout}>Logout</Nav.Link>
-                            <Avatar src="/broken-image.jpg" />
                             </>
                         )
                         : (
