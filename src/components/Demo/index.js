@@ -47,25 +47,37 @@ function getStepContent(step) {
 
 
 const Demo = () => {
-    const classes = useStyles();
-    const [activeStep, setActiveStep] = React.useState(0);
-    const steps = getSteps();
+    // const classes = useStyles();
+    // const [activeStep, setActiveStep] = React.useState(0);
+    // const steps = getSteps();
 
-    const handleNext = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    };
+    // const handleNext = () => {
+    //     setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    // };
 
-    const handleBack = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep - 1);
-    };
+    // const handleBack = () => {
+    //     setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    // };
 
-    const handleReset = () => {
-        setActiveStep(0);
-    };
+    // const handleReset = () => {
+    //     setActiveStep(0);
+    // };
 
     return(
         <div className='demo'>
-          <div className={classes.root}>
+          <div>
+            <h1>About Speech Audit</h1>
+            <p>Helping others to understand tone.</p>
+          </div>
+          <div>
+            <p>
+              Tone is the general character or attitude of a place, piece of writting, situation, etc and can helps clarifies and conveys meaning. Similar to putting ones best foot foward, understanding your tone or someone else can affect how people perceive you. Speech Audit's mission is to help other understand tone. 
+            </p>
+            <blockquote>
+              "10% of conflict is due to difference of opinion and 90% is due to delivery and tone of voice."
+            </blockquote>
+          </div>
+          {/* <div className={classes.root}>
               <Stepper activeStep={activeStep} orientation="vertical">
                   {steps.map((label, index) => (
                   <Step key={label}>
@@ -103,7 +115,7 @@ const Demo = () => {
                   </Button>
               </Paper>
         )}
-      </div>
+        </div> */}
       <div>
         <Tone/>
       </div>

@@ -10,7 +10,7 @@ const Navigation = ({ userInfo, loggedIn, _handleLogout}) => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/demo">Demo</Nav.Link>
+                        <Nav.Link href="/demo">About</Nav.Link>
                         {userInfo && loggedIn
                         ? (
                             <>
