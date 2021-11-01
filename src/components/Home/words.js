@@ -1,290 +1,290 @@
 export default [
     {
-        text: 'Absurd',
+        text: 'Absurd?',
         value: 8,
     },
     {
-        text: 'Accusatory',
+        text: 'Accusatory?',
         value: 5,
     },
     {
-        text: 'Acerbic',
+        text: 'Acerbic?',
         value: 11,
     },
     {
-        text: 'Admiring',
+        text: 'Admiring?',
         value: 4,
     },
     {
-        text: 'Aggressive',
+        text: 'Aggressive?',
         value: 5,
     },
     {
-        text: 'Aggrieved',
+        text: 'Aggrieved?',
         value: 6,
     },
     {
-        text: 'Amused',
+        text: 'Amused?',
         value: 7,
     },
     {
-        text: 'Angry',
+        text: 'Angry?',
         value: 8,
     },
     {
-        text: 'Appreciative',
+        text: 'Appreciative?',
         value: 8,
     },
     {
-        text: 'Arrogant',
+        text: 'Arrogant?',
         value: 9,
     },
     {
-        text: 'Detached',
+        text: 'Detached?',
         value: 10,
     },
     {
-        text: 'Diplomatic',
+        text: 'Diplomatic?',
         value: 7,
     },
     {
-        text: 'Disapproving',
+        text: 'Disapproving?',
         value: 3,
     },
     {
-        text: 'Disheartening',
+        text: 'Disheartening?',
         value: 4,
     },
     {
-        text: 'Direct',
+        text: 'Direct?',
         value: 5,
     },
     {
-        text: 'Encouraging',
+        text: 'Encouraging?',
         value: 2,
     },
     {
-        text: 'Excited',
+        text: 'Excited?',
         value: 6,
     },
     {
-        text: 'Farcical',
+        text: 'Farcical?',
         value: 7,
     },
     {
-        text: 'Formal',
+        text: 'Formal?',
         value: 8,
     },
     {
-        text: 'Gentle',
+        text: 'Gentle?',
         value: 9,
     },
     {
-        text: 'Grim',
+        text: 'Grim?',
         value: 5,
     },
     {
-        text: 'Humorous',
+        text: 'Humorous?',
         value: 6,
     },
     {
-        text: 'Impassioned',
+        text: 'Impassioned?',
         value: 5,
     },
     {
-        text: 'Impressionable',
+        text: 'Impressionable?',
         value: 4,
     },
     {
-        text: 'Informative',
+        text: 'Informative?',
         value: 6,
     },
     {
-        text: 'Irreverent',
+        text: 'Irreverent?',
         value: 11,
     },
     {
-        text: 'Joyful',
+        text: 'Joyful?',
         value: 4,
     },
     {
-        text: 'Light-Hearted',
+        text: 'Light-Hearted?',
         value: 4,
     },
     {
-        text: 'Loving',
+        text: 'Loving?',
         value: 6,
     },
     {
-        text: 'Judgemental',
+        text: 'Judgemental?',
         value: 3,
     },
     {
-        text: 'Mocking',
+        text: 'Mocking?',
         value: 5,
     },
     {
-        text: 'Negative',
+        text: 'Negative?',
         value: 5,
     },
     {
-        text: 'Objective',
+        text: 'Objective?',
         value: 6,
     },
     {
-        text: 'Optimistic',
+        text: 'Optimistic?',
         value: 8,
     },
     {
-        text: 'Thoughtful',
+        text: 'Thoughtful?',
         value: 7,
     },
     {
-        text: 'Philosophical',
+        text: 'Philosophical?',
         value: 4,
     },
     {
-        text: 'Righeous',
+        text: 'Righeous?',
         value: 5,
     },
     {
-        text: 'Sensationalistic',
+        text: 'Sensationalistic?',
         value: 6,
     },
     {
-        text: 'Sincere',
+        text: 'Sincere?',
         value: 6,
     },
     {
-        text: 'Sentimental',
+        text: 'Sentimental?',
         value: 5,
     },
     {
-        text: 'Witty',
+        text: 'Witty?',
         value: 6,
     },
     {
-        text: 'Wretched',
+        text: 'Wretched?',
         value: 3,
     },
     {
-        text: 'Whimsical',
+        text: 'Whimsical?',
         value: 5,
     },
     {
-        text: 'Urgent',
+        text: 'Urgent?',
         value: 5,
     },
     {
-        text: 'Tragic',
+        text: 'Tragic?',
         value: 6,
     },
     {
-        text: 'Tolerant',
+        text: 'Tolerant?',
         value: 8,
     },
     {
-        text: 'Sulking',
+        text: 'Sulking?',
         value: 7,
     },
     {
-        text: 'Submissive',
+        text: 'Submissive?',
         value: 4,
     },
     {
-        text: 'Righeous',
+        text: 'Righeous?',
         value: 5,
     },
     {
-        text: 'Unassuming',
+        text: 'Unassuming?',
         value: 6,
     },
     {
-        text: 'Vindictive',
+        text: 'Vindictive?',
         value: 6,
     },
     {
-        text: 'Restrained',
+        text: 'Restrained?',
         value: 5,
     },
     {
-        text: 'Bold',
+        text: 'Bold?',
         value: 6,
     },
     {
-        text: 'Calm',
+        text: 'Calm?',
         value: 8,
     },
     {
-        text: 'Commanding',
+        text: 'Commanding?',
         value: 7,
     },
     {
-        text: 'Doubtful',
+        text: 'Doubtful?',
         value: 4,
     },
     {
-        text: 'Dramatic',
+        text: 'Dramatic?',
         value: 5,
     },
     {
-        text: 'Egotistical',
+        text: 'Egotistical?',
         value: 6,
     },
     {
-        text: 'Impartial',
+        text: 'Impartial?',
         value: 6,
     },
     {
-        text: 'Humorous',
+        text: 'Humorous?',
         value: 5,
     },
     {
-        text: 'Gullible',
+        text: 'Gullible?',
         value: 6,
     },
     {
-        text: 'Humble',
+        text: 'Humble?',
         value: 3,
     },
     {
-        text: 'Malicious',
+        text: 'Malicious?',
         value: 5,
     },
     {
-        text: 'Wonder',
+        text: 'Wonder?',
         value: 5,
     },
     {
-        text: 'Uneasy',
+        text: 'Uneasy?',
         value: 6,
     },
     {
-        text: 'Gloomy',
+        text: 'Gloomy?',
         value: 8,
     },
     {
-        text: 'Neutral',
+        text: 'Neutral?',
         value: 7,
     },
     {
-        text: 'Earnest',
+        text: 'Earnest?',
         value: 4,
     },
     {
-        text: 'Cheerful',
+        text: 'Cheerful?',
         value: 5,
     },
     {
-        text: 'Placid',
+        text: 'Placid?',
         value: 6,
     },
     {
-        text: 'Lively',
+        text: 'Lively?',
         value: 6,
     },
     {
-        text: 'Modest',
+        text: 'Modest?',
         value: 5,
     }
 ]
