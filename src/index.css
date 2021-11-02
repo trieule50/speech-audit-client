@@ -32,17 +32,58 @@ h2, h1{
   color: black;
 }
 
+.mission-container{
+  background-color: rgb(48, 87, 98);
+  display: flex;
+}
+
+.mission p{
+  color: rgb(242, 208, 75);
+  font-size: 3rem;
+}
+
+.text p{
+  color: whitesmoke;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding: 1rem;
+  width: 75%;
+}
+
+.quote{
+  display: flex;
+}
+
+.quote img{
+  width: 75%;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  justify-content: center;
+}
+
 .home-container{
   padding-top: 2rem;
 }
 
 .audio, .tone, .signin, .signup{
   height: 100vh;
-}
-
-.home-img{
-  height: 28rem;
-  padding: 1rem;
 }
 
 .work-in-progress{
@@ -54,10 +95,6 @@ h2, h1{
   padding: 2rem;
   background-color: rgb(179, 205, 243);
   border-radius: 25px;
-}
-
-.demo-icon{
-  padding: 5rem;
 }
 
 .sign-in{
