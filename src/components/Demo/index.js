@@ -25,10 +25,22 @@ const Demo = () => {
             <div>
               <img src='https://www.hrcloud.com/hubfs/Group%2040-1.png' alt='conflict resolution'></img>
             </div>
-            <blockquote>
-              10% of conflict is due to difference of opinion and 90% is due to delivery and tone of voice.
-              <footer>-Unknown</footer>
-            </blockquote>
+            <div className='info-text'>
+              <h3>What is <span>Speech Audit</span>?</h3>
+              <p>Communication is the center of innovation. It brings people together and allows individual to express their feelings or thoughts. With the impact of COVID, speech audit is here to help with the written communication.</p>
+              <p>
+                How many time have you asked the question "How do I sound in this email?" or "Does my email/written word convey my feeling?" 
+              </p>
+              <blockquote>
+                10% of conflict is due to difference of opinion and 90% is due to delivery and tone of voice.
+                <footer>-Unknown</footer>
+              </blockquote>
+              <p>
+                With the help of speech audit, everyone can feel confident before clicking "SEND". 
+              </p>
+              <p>Test out the tone analyzer by inputting a phrase / sentence / paragraph and click "SUBMIT"</p>
+            </div>
+            
           </div>
       <div>
         <Tone/>
