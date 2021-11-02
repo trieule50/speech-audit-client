@@ -138,25 +138,31 @@ blockquote p {
   background: linear-gradient(rgba(43, 122, 120, .85), rgb(34, 55, 63));
 }
 
-.audio, .signin, .signup{
-  height: 100vh;
-}
-
 .work-in-progress{
   height: 18rem;
   padding: 2rem;
 }
 
-.signup-form, .signin-form{
-  padding: 2rem;
-  background-color: rgb(179, 205, 243);
-  border-radius: 25px;
-}
-
-.sign-in{
-  height: 17rem;
-}
-
 .results{
   padding: 2rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.signin{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.signin-img{
+  height: 100vh;
+}
+
+.logo{
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
