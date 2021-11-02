@@ -57,11 +57,17 @@ const Signup = () => {
 
     return(
         <div className='signup'>
-            <h2>Sign Up</h2>
+            <div className='signup-item'>
+            <div className='logo'>
+            <img src='https://image.flaticon.com/icons/png/512/4359/4359295.png' alt='speech audit' style={{height: '1.5rem'}}/>
+            <p>Speech Audit</p>
+            </div>
+            <h2>Create your account</h2>
+            <small>Sign up to stay updated on our speech analyzer</small>
             <Container className='signup-form'>
-            <Form onSubmit={_handleSignup}>
+            <Form onSubmit={_handleSignup} style={{width: "20rem", margin: '2rem'}}>
                 <Form.Group className="mb-3" controlId="email">
-                    <Form.Label>Email address</Form.Label>
+                    {/* <Form.Label>Email address</Form.Label> */}
                     <Form.Control 
                     type="email" 
                     placeholder="Enter email"
@@ -69,9 +75,8 @@ const Signup = () => {
                     onChange={_handleChange}
                     />
                 </Form.Group>
-
                 <Form.Group className="mb-3" controlId="password">
-                    <Form.Label>Password</Form.Label>
+                    {/* <Form.Label>Password</Form.Label> */}
                     <Form.Control 
                     type="password" 
                     placeholder="Password" 
@@ -81,7 +86,7 @@ const Signup = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="repassword">
-                    <Form.Label>Re-Enter Password</Form.Label>
+                    {/* <Form.Label>Re-Enter Password</Form.Label> */}
                     <Form.Control 
                     type="password" 
                     placeholder="Re-Enter Password" 
@@ -104,6 +109,11 @@ const Signup = () => {
 				)}
             </Form>
             </Container>
+            </div>
+            <div className='signup-item'>
+            <img className='signup-img' src='https://bogolovan.com/wp-content/uploads/2018/09/AdobeStock_emotions-collage-min-1024x1024.jpeg'/>
+            </div>
+            
         </div>
     )
 }
