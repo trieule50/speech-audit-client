@@ -139,11 +139,6 @@ blockquote p {
   background: linear-gradient(rgba(43, 122, 120, .85), rgb(34, 55, 63));
 }
 
-.work-in-progress{
-  height: 18rem;
-  padding: 2rem;
-}
-
 .results{
   /* padding: 2rem; */
   margin-top: 4rem;
@@ -166,4 +161,13 @@ blockquote p {
   margin: 1.5rem;
   display: flex;
   justify-content: center;
+}
+
+.audio{
+  display: flex;
+}
+
+.coming-soon{
+  font-size: 2.5rem;
+  font-weight: bold;
 }

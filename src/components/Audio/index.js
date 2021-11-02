@@ -3,10 +3,22 @@ import { Form, Button } from 'react-bootstrap'
 const Audio = () => {
     return(
         <div className='audio'>
-            <h2>Work in Progress.</h2>
-            <h5>In the meantime, checkout the tone analyzer. </h5>
-            <img className="work-in-progress" src="https://image.flaticon.com/icons/png/512/4771/4771270.png" alt="working in progress"/>
+            <div className='audio-item countdown'>
+            </div>
+            <div className='audio-item'>
+                <div className='logo'>
+                <img src='https://image.flaticon.com/icons/png/512/4359/4359295.png' alt='speech audit' style={{height: '1.5rem'}}/>
+                <p>Speech Audit</p>
+                </div>
+                <p className='coming-soon'>GREAT THINGS ARE COMING</p>
+                <Button href='/demo' variant="warning" style={{ marginBottom: '2rem'}}>
+                Learn More {">>"}
+                </Button>
+            </div>
         </div>
+
+
+
         // <div className='audio'>
         //     <h2>Audio Analyzer</h2>
         //     <Form.Group controlId="formFile" className="mb-3">
