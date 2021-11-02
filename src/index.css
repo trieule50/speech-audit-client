@@ -35,23 +35,27 @@ h2, h1{
 .mission-container{
   background-color: rgb(48, 87, 98);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .mission p{
   color: rgb(242, 208, 75);
   font-size: 3rem;
+  padding-left: 8rem;
 }
 
 .text p{
   color: whitesmoke;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.8;
-  padding: 1rem;
-  width: 75%;
+  padding: 2rem;
+  text-align: left;
 }
 
 .quote{
   display: flex;
+  margin: 2rem;
 }
 
 .quote img{

@@ -13,7 +13,7 @@ const Demo = () => {
           </div>
           <div className='mission-container'>
             <div className='about-text mission'>
-              <p>Mission Statement</p>
+              <p>Mission</p>
             </div>
             <div className='about-text text'>
               <p>
