@@ -32,7 +32,7 @@ const Home = ({ userInfo }) =>{
                         }
                     </h1>
                     <div className='instruction-container'>
-                        <p style={{marginBottom:'2rem', fontSize:'1.75rem'}}>How It Works</p>
+                        <p style={{marginBottom:'1.75rem', fontSize:'1.75rem'}}>How It Works</p>
                         <div className='instruction'>
                             <div className='instruction-item'>
                                 <img src="https://cdn-icons-png.flaticon.com/512/1536/1536475.png" alt="click" style={{ height: "2rem"}}></img>
