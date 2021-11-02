@@ -152,12 +152,8 @@ blockquote p {
   justify-content: space-evenly;
 }
 
-.signin-img{
-  height: 100vh;
-}
-
 .signup-img{
-  max-width: 100%;
+  width: 100%;
 }
 
 .logo{
