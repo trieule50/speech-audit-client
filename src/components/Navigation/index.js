@@ -10,14 +10,13 @@ const Navigation = ({ userInfo, loggedIn, _handleLogout}) => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/demo">Demo</Nav.Link>
+                        <Nav.Link href="/demo">About</Nav.Link>
                         {userInfo && loggedIn
                         ? (
                             <>
-                            <Nav.Link href="/tone">Tone Analyzer</Nav.Link>
+                            {/* <Nav.Link href="/tone">Tone Analyzer</Nav.Link> */}
                             <Nav.Link href="/audio">Speech Analyzer</Nav.Link>
                             <Nav.Link href="/" onClick={_handleLogout}>Logout</Nav.Link>
-                            <Avatar src="/broken-image.jpg" />
                             </>
                         )
                         : (

@@ -1,5 +1,5 @@
 import { Button, Container, Form, Spinner } from "react-bootstrap";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Tone = () =>{
 
@@ -41,15 +41,17 @@ const Tone = () =>{
     
     return(
         <div className='tone'>
-            <h1>Tone Analyzer</h1>
             <Container className='tone-analyzer-form'>
+            <div className='tone-item tone-input'>
+            <h3>Tone Analyzer</h3>
+            <p>Main features</p>
             <Form onSubmit={_handleSubmit}>
                 <Form.Group className="mb-3" controlId="text">
-                    <Form.Label>Text Area</Form.Label>
                     <Form.Control rows={3} 
                     required
                     value={formData.text}
                     type="text"
+                    placeholder="i.e. Thank you for trying speech audit"
                     onChange={_handleChange}
                     />
                 </Form.Group>
@@ -57,6 +59,7 @@ const Tone = () =>{
                     Submit
                 </Button>
             </Form>
+            </div>
             </Container>
             <Container>
             <div className='results'>
