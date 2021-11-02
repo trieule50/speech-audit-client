@@ -2,8 +2,28 @@ body {
   text-align: center;
 }
 
-p{
-  font-size: 1.25rem;
+.statement{
+  margin-top: 2rem;
+}
+
+.statement-item{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.instruction{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.instruction-container{
+  margin-top: 1.5rem;
+}
+
+.opening{
+  margin-top: 2.5rem;
 }
 
 .demo-img{
@@ -115,7 +135,7 @@ blockquote p {
 }
 
 .cloud{
-  background: linear-gradient(45deg,rgba(43, 122, 120, .85), rgba(23, 37, 42, 1));
+  background: linear-gradient(rgba(43, 122, 120, .85), rgb(34, 55, 63));
 }
 
 .audio, .signin, .signup{
