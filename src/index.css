@@ -147,11 +147,6 @@ blockquote p {
   padding: 2rem;
 }
 
-.container{
-  display: flex;
-  justify-content: center;
-}
-
 .signin, .signup{
   display: flex;
   justify-content: space-evenly;
