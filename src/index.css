@@ -114,11 +114,11 @@ blockquote p {
   color: rgb(242, 208, 75);
 }
 
-.home-container{
-  padding-top: 2rem;
+.cloud{
+  background: linear-gradient(45deg,rgba(43, 122, 120, .85), rgba(23, 37, 42, 1));
 }
 
-.audio, .tone, .signin, .signup{
+.audio, .signin, .signup{
   height: 100vh;
 }
 
